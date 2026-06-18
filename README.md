@@ -1,11 +1,9 @@
-# terraform-azure-infra
+terraform-azure-infra
 
 Production-grade Azure infrastructure using Terraform — AKS cluster with VNet, auto-scaling, and monitoring across dev and prod environments.
 
 ---
-
-## Architecture
-
+ Architecture
 ```
 terraform-azure-infra/
 ├── environments/
@@ -29,7 +27,7 @@ terraform-azure-infra/
 
 ---
 
-## What This Provisions
+ What This Provisions
 
 - **VNet** — Private network with dedicated subnet for AKS nodes
 - **AKS** — Auto-scaling Kubernetes cluster (Azure Kubernetes Service)
@@ -37,7 +35,7 @@ terraform-azure-infra/
 
 ---
 
-## Tech Stack
+Tech Stack
 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
@@ -45,22 +43,22 @@ terraform-azure-infra/
 
 ---
 
-## How to Deploy
+ How to Deploy
 
-### Prerequisites
+Prerequisites
 
 - [Terraform](https://developer.hashicorp.com/terraform/downloads) >= 1.0
 - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 - Azure subscription with contributor access
 
-### Authenticate to Azure
+ Authenticate to Azure
 
 ```bash
 az login
 az account set --subscription "<your-subscription-id>"
 ```
 
-### Deploy Dev Environment
+ Deploy Dev Environment
 
 ```bash
 cd environments/dev
@@ -69,7 +67,7 @@ terraform plan -var-file="terraform.tfvars"
 terraform apply -var-file="terraform.tfvars"
 ```
 
-### Deploy Prod Environment
+ Deploy Prod Environment
 
 ```bash
 cd environments/prod
@@ -80,7 +78,7 @@ terraform apply -var-file="terraform.tfvars"
 
 ---
 
-## CI/CD
+ CI/CD
 
 Every push to `main` triggers the GitHub Actions workflow which runs:
 
@@ -92,7 +90,7 @@ See `.github/workflows/terraform-ci.yml` for full pipeline configuration.
 
 ---
 
-## Key Variables
+ Key Variables
 
 | Variable | Description | Default |
 |---|---|---|
@@ -103,7 +101,7 @@ See `.github/workflows/terraform-ci.yml` for full pipeline configuration.
 
 ---
 
-## Author
+ Author
 
 **Lokesh Kumar Gaddala**
 DevOps & Cloud Engineer | Berlin, Germany
