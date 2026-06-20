@@ -1,6 +1,6 @@
 terraform-azure-infra
 
-Production-grade Azure infrastructure using Terraform — AKS cluster with VNet, auto-scaling, and monitoring across dev and prod environments.
+Production-grade Azure infrastructure using Terraform AKS cluster with VNet,auto-scaling and monitoring across dev and prod environments.
 
 ---
  Architecture
