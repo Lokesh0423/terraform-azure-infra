@@ -84,9 +84,9 @@ terraform apply -var-file="terraform.tfvars"
 
 Every push to `main` triggers the GitHub Actions workflow which runs:
 
-1. `terraform fmt` — format check
-2. `terraform init` — initialise providers
-3. `terraform validate` — validate configuration
+1. `terraform fmt`  format check
+2. `terraform init`  initialise providers
+3. `terraform validate`  validate configuration
 
 See `.github/workflows/terraform-ci.yml` for full pipeline configuration.
 
