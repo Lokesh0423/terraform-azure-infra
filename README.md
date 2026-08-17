@@ -29,9 +29,9 @@ terraform-azure-infra/
 
  What This Provisions
 
-- **VNet** — Private network with dedicated subnet for AKS nodes
-- **AKS** — Auto-scaling Kubernetes cluster (Azure Kubernetes Service)
-- **Monitoring** — Azure Monitor + Log Analytics workspace with CPU/memory alert
+- **VNet**  Private network with dedicated subnet for AKS nodes
+- **AKS**  Auto-scaling Kubernetes cluster (Azure Kubernetes Service)
+- **Monitoring**  Azure Monitor + Log Analytics workspace with CPU/memory alert
 
 ---
 
